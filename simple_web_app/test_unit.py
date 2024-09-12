@@ -91,3 +91,4 @@ def test_8_chars_with_caret_especial_character_password_should_raise_exception()
     with pytest.raises(Exception):  # then
         # when
         validator.password_validate()
+        
