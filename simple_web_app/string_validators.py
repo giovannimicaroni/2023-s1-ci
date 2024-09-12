@@ -62,9 +62,9 @@ class EspecialCharacterValidator(Validator):
             msg = "Passwords must have at least 1 especial character!"
             raise EspecialCharacterException(detail=msg)
         if (
-            ("^" in self.content_set)
-            or ("/" in self.content_set)
-            or ("~" in self.content_set)
+            ("^" in content)
+            or ("/" in content)
+            or ("~" in content)
         ):
             msg = "Passwords can't contain '/', '~' or '^'!"
             raise EspecialCharacterException(detail=msg)
